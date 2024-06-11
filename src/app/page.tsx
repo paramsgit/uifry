@@ -5,10 +5,17 @@ import Container from "./components/container";
 export default function Home() {
   return (
     <>
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Navbar/>
-        <Container/>
-        </main>
+       
+        <div
+      className=" bg-slate-50 dark:bg-slate-950 w-full lg:h-screen lg:overflow-auto overflow-hidden
+     "
+    >
+      <div className="lg:w-[1090px] w-[425px] flex justify-center flex-col  mx-auto bg-slate-50  dark:bg-slate-950">
+        <Navbar />
+        <Container />
+        
+      </div>
+    </div>
     </>
   );
 }
