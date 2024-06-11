@@ -22,12 +22,12 @@ export default function Left() {
         faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
       </p>
       <div className=" flex relative lg:px-0 px-4  mt-6 justify-between w-[374px]  h-[60px] items-center">
-        <button className=" w-[180px] h-[60px] bg-primary-black dark:bg-primary-white dark:text-primary-black text-primary-white rounded-md flex justify-center items-center  gap-2 hover:bg-primary-red dark:hover:bg-primary-red ease-linear transition-all  ">
+        <button className=" w-[180px] h-[60px] bg-primary-black dark:bg-slate-200 dark:text-primary-black text-primary-white rounded-md flex justify-center items-center  gap-2 hover:bg-primary-red dark:hover:bg-primary-red ease-linear transition-all  ">
           <span className=" font-[ClashDisplay-Medium]">Get Started</span>
           <img src={`/assets/arrow.png`} alt="" />
         </button>
         <button className="a flex w-[154px] items-center justify-center h-[29px] gap-3 hover:text-primary-red hover:border-b-primary-red hover:border-b-2  py-7 dark:text-white ">
-          <img src={`/assets/play.png`} alt="" />
+          <img className="p-1 dark:bg-gray-100 dark:rounded-full" src={`/assets/play.png`} alt="" />
           <span className=" font-[ClashDisplay-Medium]">Watch Video</span>
         </button>
       </div>

@@ -10,8 +10,13 @@ export default function Footer() {
       >
         <div className=" flex gap-5 mt-[6px] flex-col lg:ml-0 -ml-10">
           <img
-            className=" min-w-[117px] min-h-[35px] dark:bg-primary-white  rounded-md  p-2 lg:scale-100 scale-90"
+            className=" min-w-[117px] min-h-[35px] dark:bg-primary-white dark:hidden rounded-md  p-2 lg:scale-100 scale-90"
             src={`/assets/Logo.png`}
+            alt=""
+          />
+          <img
+            className=" min-w-[117px] min-h-[35px] hidden dark:block  rounded-md  p-2 lg:scale-100 scale-90"
+            src={`/assets/LogoDark.png`}
             alt=""
           />
           <p className="a flex items-center ">

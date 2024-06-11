@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -15,7 +16,7 @@ const config: Config = {
       },
       colors: {
         "primary-black": "#000000",
-        "primary-white": "#FFFFFF",
+        "primary-white": "rgb(226 232 240)",
         "primary-red": "#FF5555",
       },
       fontFamily: {
