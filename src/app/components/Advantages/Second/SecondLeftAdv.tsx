@@ -80,6 +80,8 @@ const SecondLeftAdv: React.FC = () => {
             if (el) imagesRef.current[3] = el;
           }}
         />
+      
+        
       </div>
     </>
   );
