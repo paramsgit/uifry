@@ -141,7 +141,6 @@ const Banner: React.FC = () => {
           </div>
           <button
             className="bg-primary-white flex text-primary-black w-[208px] h-[60px] rounded-md items-center justify-center gap-2 relative hover:bg-primary-red transition-all hover:text-white lg:scale-100 scale-90 lg:ml-0 -ml-3 download-button"
-            style={{ opacity: 0, y: 20 }}
           >
             <span className="font-[ClashDisplay-Medium] lg:text-[18px]">
               Download App
