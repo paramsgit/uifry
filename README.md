@@ -4,8 +4,8 @@ This README file provides details about the responsive landing page for a web ap
 
 ## Design Reference
 
-- **Figma Link:** [Figma Link](#)
-- **Figma Dev Mode Link:** [Figma Dev Mode Link](#)
+- **Figma Link:** [Figma Link](https://www.figma.com/community/file/1145991068621514311)
+- **Figma Dev Mode Link:** [Figma Dev Mode Link](https://www.figma.com/design/dvc71PcUEYRKrtnZOapRtI/App-Landing-Page-Finance-Bank-Money-(Community)?m=dev&node-id=0-1&t=uyErxTIHgm8nS2dC-1)
 
 
 
@@ -27,12 +27,12 @@ The landing page was developed using the following technologies and features:
 
 1. Clone the repository:
    ```sh
-   git clone [repository link]
+   git clone https://github.com/paramsgit/uifry
     ```
 
  2.  Navigate to the project directory:
      ```
-     cd 
+     cd uifry
      ```
 3. Install dependencies:
     ```
