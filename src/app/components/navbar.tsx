@@ -17,8 +17,10 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 //   { theme, setTheme }
   useEffect(() => {
-    if (typeof document !== "undefined") {
+    
+    if (typeof(window) !== "undefined") {
     if (theme === "dark") {
+     
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
