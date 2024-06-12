@@ -5,7 +5,7 @@ import { useEffect,useRef, useState } from "react";
 const FAQ = dynamic(() => import('./FAQ'),{ssr:false});
 const Banner = dynamic(() => import('./Banner'),{ssr:false});
 const Footer = dynamic(() => import('./Footer'),{ssr:false});
-const Features = dynamic(() => import('./Feature'),{ssr:false});
+const Features = dynamic(() => import('./Features'),{ssr:false});
 const Advantages = dynamic(() => import('./Advantages'),{ssr:false});
 const Testimonial = dynamic(() => import('./Testimonials'),{ssr:false});
 
