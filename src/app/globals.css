@@ -27,3 +27,41 @@ body {
     text-wrap: balance;
   }
 }
+/* .phone1,.phone2,.phone3,.phoneBg,.heroPhoneDiv{
+  transition: all 0.5s ease-in-out;
+}
+.heroPhoneDiv:hover .phone3{
+  left: 85px;
+}
+.heroPhoneDiv:hover .phone1{
+  left: 152px;
+} */
+
+@keyframes movePhone1 {
+  from {
+    left: 152px; 
+  }
+  to {
+    left: 65px; 
+  }
+}
+
+@keyframes movePhone3 {
+  from {
+    left: 85px;
+  }
+  to {
+    left: 176px;
+  }
+}
+@media (min-width: 1024px) {
+  .animatePhone1 {
+    animation: movePhone1 1s forwards; 
+  }
+  
+  .animatePhone3 {
+    animation: movePhone3 1s forwards; 
+  }
+}
+
+
