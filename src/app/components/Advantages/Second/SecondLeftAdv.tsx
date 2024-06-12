@@ -1,12 +1,26 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef ,useState} from "react";
 import { gsap } from "gsap";
+import Cards from 'react-credit-cards-2';
+import './card.css'
 
-const SecondLeftAdv: React.FC = () => {
+type FocusType = "name" | "number" | "expiry" | "cvc" | "";
+interface CardState {
+  number: string;
+  expiry: string;
+  cvc: string;
+  name: string;
+  focus: FocusType;
+}
+interface SecondLeftAdvProps {
+  state: CardState;
+  // setState: React.Dispatch<React.SetStateAction<CardState>>;
+}
+const SecondLeftAdv: React.FC<SecondLeftAdvProps> = ({state}) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const imagesRef = useRef<HTMLImageElement[]>([]);
-
+  const imagesRef = useRef<HTMLImageElement[]|HTMLDivElement[]>([]);
+ const {number,expiry,cvc,name,focus}=state;
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,6 +55,8 @@ const SecondLeftAdv: React.FC = () => {
     };
   }, []);
 
+
+
   return (
     <>
       <div
@@ -72,16 +88,23 @@ const SecondLeftAdv: React.FC = () => {
             if (el) imagesRef.current[2] = el;
           }}
         />
-        <img
+        {/* <img
           className="absolute lg:left-[110px] lg:top-4 lg:scale-100 scale-[60%] lg:-bottom-0 -bottom-[255px] left-[100px]"
           src={`/assets/advs2.png`}
           alt=""
-          ref={(el) => {
+         
+        /> */}
+        <div  ref={(el) => {
             if (el) imagesRef.current[3] = el;
-          }}
-        />
-      
-        
+          }}>
+      <Cards
+        number={state.number}
+        expiry={state.expiry}
+        cvc={state.cvc}
+        name={state.name}
+        focused={state.focus}
+      />
+       </div> 
       </div>
     </>
   );

@@ -65,3 +65,9 @@ body {
 }
 
 
+.rccs__card__background{
+  background-image: url('../../public/assets/23.jpeg');
+}
+.rccs__card--front{
+  background-image: url('../../public/assets/23.jpeg');
+}
