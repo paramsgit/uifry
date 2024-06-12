@@ -56,11 +56,11 @@ body {
 }
 @media (min-width: 1024px) {
   .animatePhone1 {
-    animation: movePhone1 1s forwards; 
+    animation: movePhone1 2s forwards; 
   }
   
   .animatePhone3 {
-    animation: movePhone3 1s forwards; 
+    animation: movePhone3 2s forwards; 
   }
 }
 

@@ -64,7 +64,7 @@ const Navbar = () => {
                 : " dark:text-primary-white"
             } `}
           >
-            Home
+           <a href="#home"> Home</a>
           </button>
           <button
             onClick={() => setActive(2)}
@@ -74,7 +74,7 @@ const Navbar = () => {
                 : " dark:text-primary-white"
             } `}
           >
-            About Us
+           <a href="#advantages">Advantages</a> 
           </button>
           <button
             onClick={() => setActive(3)}
@@ -84,8 +84,9 @@ const Navbar = () => {
                 : "dark:text-primary-white"
             } `}
           >
-            Pricing
+           <a href="#testimonial"> Testimonials</a>
           </button>
+         
           <button
             onClick={() => setActive(4)}
             className={` hover:cursor-pointer hover:border-b-primary-red hover:border-b-2    ${
@@ -94,8 +95,9 @@ const Navbar = () => {
                 : "dark:text-primary-white"
             } `}
           >
-            Features
+              <a href="#features"> Features   </a>
           </button>
+       
         </div>
       </div>
       <div

@@ -40,14 +40,14 @@ export default function Container() {
 
   return (
     <>
-        <Hero/>
-        <Features/>
+        <div id="home"> <Hero/></div>
+        <div id="features"> <Features/></div>
         <div className="my-3"></div>
-        <div className="my-3" ref={ref1}>{viewAdvantages && <Advantages/>}</div>
-        <div className="my-3" ref={ref2}>{viewTestimonial && <Testimonial/>}</div>
-        <div className="my-3" ref={ref3}>{viewFAQ && <FAQ/>}</div>
-        <div className="my-3" ref={ref4}>{viewBanner && <Banner/>}</div>
-        <div className="my-3" ref={ref5}>{viewFooter && <Footer/>}</div>
+        <div id="advantages" className="my-3" ref={ref1}>{viewAdvantages && <Advantages/>}</div>
+        <div id="testimonial" className="my-3" ref={ref2}>{viewTestimonial && <Testimonial/>}</div>
+        <div id="faq" className="my-3" ref={ref3}>{viewFAQ && <FAQ/>}</div>
+        <div id="banner" className="my-3" ref={ref4}>{viewBanner && <Banner/>}</div>
+        <div id="footer" className="my-3" ref={ref5}>{viewFooter && <Footer/>}</div>
         
     </>
   );
